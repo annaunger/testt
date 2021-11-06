@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="box menu">
+          <img src="blomma.png" width="40px" height="40px" class="flower">
+            <input type="search" class="searchBar" placeholder="Sök bland tusentals varor.."><input type="submit" class="searchBarButton">
+
+            <div class="meny">
+                <a href="#">Ny kund</a>
+                <a href="#">Logga in</a>
+                <a href="customerservice.html">Kundservice</a>
+                <a href="shoppingcart.html"><i class="fa fa-shopping-cart" id="small-basket"></i></a>
+            </div>
+        </div>
+        <div class="box header" style="font-size:5vw;">Veckans erbjudanden</div>
+        <div class="box category">
+          <ul>
+            <li><a href="#">Buketter</a></li>
+            <li><a href="#">Krukväxter</a></li>
+            <li><a href="#">Krukor</a></li>
+            <li><a href="#">Jord</a></li>
+            <li><a href="#">Tillbehör</a></li>
+          </ul>
+        </div>
+        <div class="box d">
+          <div class="box item" id="item1">
+            <a href="#"><img src="./images/tulpaner.jpeg" height="140px" width="140px"></a>
+            <p>Tulpaner</p>
+            <p>100 kr</p>
+            <button class="cButton" onclick="addToBasket(this, '1', 'Tulpaner', '50', './images/tulpaner.jpeg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item2">
+            <a href="#"><img src="./images/rosor.jpg" height="140px" width="140px"></a>
+                <p>Rosor</p>
+                <p>55kr</p>
+                <button class="cButton" onclick="addToBasket(this, '2', 'Rosor', '50', './images/tulpaner.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item3">
+            <a href="#"><img src="./images/solros.jpg" height="140px" width="140px"></a>
+            <p>Solros</p>
+            <p>79kr</p>
+            <button class="cButton" onclick="addToBasket(this, '3', 'Solros', '50', './images/solros.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item4">
+            <a href="#"><img src="./images/kruka.jpg" height="140px" width="140px"></a>
+            <p>Kruka</p>
+            <p>20kr</p>
+            <button class="cButton" onclick="addToBasket(this, '4', 'Kruka', '50', './images/kruka.jpg')"></a>Lägg till</button>
+            </div>
+          <div class="box item" id="item5">
+              <a href="#"><img src="./images/jord.jpg" height="140px" width="140px"></a>
+              <p>Jord</p>
+              <p>69 kr</p>
+              <button class="cButton" onclick="addToBasket(this, '5', 'Jord', '50', './images/jord.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item6">
+            <a href="#"><img src="./images/blombukett.jpg" height="140px" width="140px"></a>
+                <p>Blombukett</p>
+                <p>140 kr</p>
+                <button class="cButton" onclick="addToBasket(this, '6', 'Blombuckett', '50', './images/blombukett.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item7"><a href="#"><img src="./images/handskar.jpg" height="140px" width="140px"></a>
+            <p>Handksar</p>
+            <p>25 kr</p>
+            <button class="cButton" onclick="addToBasket(this, '7', 'Handskar', '50', './images/handskar.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item8">
+            <a href="#"><img src="./images/gödsel.jpg" height="140px" width="140px"></a>
+                <p>Gödsel</p>
+                <p>60 kr</p>
+                <button class="cButton" onclick="addToBasket(this, '8', 'Gödsel', '50', './images/gödsel.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item9">
+            <a href="#"><img src="./images/spade.jpg" height="140px" width="140px"></a>
+                <p>Spade</p>
+                <p>100 kr</p>
+                <button class="cButton" onclick="addToBasket(this, '9', 'Spade', '50', './images/spade.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item10">
+            <a href="#"><img src="./images/frön.jpg" height="140px" width="140px"></a>
+                <p>Frön</p>
+                <p>100 kr</p>
+                <button class="cButton" onclick="addToBasket(this, '10', 'Frön', '50', './images/frön.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item11">
+            <a href="#"><img src="./images/orkide.jpg" height="140px" width="140px"></a>
+                <p>Orkidé</p>
+                <p>100 kr</p>
+                <button class="cButton" onclick="addToBasket(this, '11', 'Orkidé', '50', './images/orkide.jpg')">Lägg till</button>
+          </div>
+          <div class="box item" id="item12">
+            <a href="#"><img src="./images/lavender.jpg" height="140px" width="140px"></a>
+                <p>Lavender</p>
+                <p>100 kr</p>
+                <button class="cButton" onclick="addToBasket(this, '12', 'Lavender', '50', './images/lavender.jpg')">Lägg till</button>
+          </div>
+        </div>
+        <div class="box advertising" id="adbox">
+          <img src="./images/banner.png" alt="banner" class="banner">
+        </div>
+        <div class="box footer">
+          <aside class="aside1">
+            <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-linkedin"></i>
+              <p class="at">Drottningholmsvägen 82</p>
+              <p class="at">112 43 Stockholm</p>
+              <p class="at">Info.Thn@Edu.Stockholm.se</p>
+              <p class="at">08 - 508 435 00</p>
+          </aside>
+          <aside class="aside2">
+            <p id="ft"><img src="blomma.png" alt="blomma" height="40px" width="40px"> Blommor & Buketter</p>
+          </aside>
+        </div>
+      </div>
+      <div class="notification" id="notify"></div>
+      <script src="webshop.js"></script>
+</body>
+</html>

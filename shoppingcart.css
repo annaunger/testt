@@ -1,0 +1,171 @@
+body {
+	margin: 40px;
+  }
+
+	  .grid {
+		  background-color: #fff;
+		  color: #444;
+	  }
+
+	  .box {
+		  background-color: #444;
+		  color: #fff;
+		  border-radius: 5px;
+		  padding: 20px;
+		  font-size: 150%;
+
+	  }
+
+	  .box .box {
+		  background-color: #ccc;
+		  color: #444;
+	  }
+
+
+	  .meny{
+		float: right;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	  }
+
+	  .menu a{
+		text-decoration: none;
+		padding-right: 15px;
+		color: white;
+		font-size: 25px;
+	  }
+
+	  .searchBar {
+		height: 40px;
+		width: 450px;
+		border-radius: 5px;
+	  }
+
+	  .searchBarButton{
+		height: 40px;
+		width: 100px;
+		border-radius: 5px;
+	  }
+
+	  .header {
+		  text-align: center;
+		  font-size: 50px;
+	  }
+
+	  ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	  }
+
+	  li a {
+		display: block;
+		color: #000;
+		padding: 8px 16px;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+	  }
+
+	  li:last-child {
+		border-bottom: none;
+	  }
+
+	  li a.active {
+		color: white;
+	  }
+
+	  li a:hover:not(.active) {
+		background-color: #555;
+		color: white;
+	  }
+
+	  .item-image {
+		  height: 40px;
+		  width: 40px;
+	  }
+
+
+
+	.banner{
+	  width: 100%;
+  }
+
+  #adbox {
+	  padding: 0%;
+  }
+
+
+  .aside1 {
+		float: right;
+	}
+
+  .aside2 {
+	  float: left;
+  }
+
+  #ft {
+	  font-size: 30px;
+	  font-family: Brush Script MT;
+	  color: white;
+  }
+
+  .at{
+	color: white;
+	font-size: 15px;
+}
+
+
+
+
+/*----------------------GRID---------------------------*/
+.menu{
+    grid-area: box_menu;
+}
+.header{
+    grid-area: box_header;
+}
+.d {
+    grid-area: box_d;
+}
+.advertising {
+    grid-area: box_advertising;
+}
+.footer {
+    grid-area: box_footer;
+}
+
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    grid-template-areas:
+    'box_menu box_menu box_menu box_menu box_menu'
+    'box_header box_header box_header box_header box_header'
+    'box_d box_d box_d box_d box_d'
+    'box_advertising box_advertising box_advertising box_advertising box_advertising'
+    'box_footer box_footer box_footer box_footer box_footer';
+}
+
+
+
+@media (max-width: 400px) {
+  .searchBar, .searchBarButton {
+    display: none;
+  }
+}
+
+	/*
+  .grid {
+      grid-template-areas:
+        'box_menu box_menu box_menu box_menu'
+        'box_header box_header box_header box_header'
+        'box_category box_category box_category box_category'
+        'box_d box_d box_d box_d'
+        'box_advertising box_advertising box_advertising box_advertising'
+        'box_footer box_footer box_footer box_footer';
+    }
+
+}
+*/

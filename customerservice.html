@@ -1,0 +1,84 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="customerservice.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="box menu">
+          <a href="main.html"><img src="blomma.png" width="40px" height="40px" class="flower"></a>
+            <input type="search" class="searchBar" placeholder="Sök bland tusentals varor.."><input type="submit" class="searchBarButton">
+            
+            <div class="meny">
+                <a href="#">Ny kund</a>
+                <a href="#">Logga in</a>
+                <a href="customerservice.html">Kundservice</a>
+                <a href="shoppingcart.html"><i class="fa fa-shopping-cart" id="small-basket"></i></a> 
+            </div>
+        </div>
+        <div class="box header">Kontakta oss</div>
+
+        <div class="box d">
+            <form>
+                <fieldset class="fieldset">
+                    <legend>Kontaktuppgifter:</legend>
+                    <label>Namn:</label><br />
+                    <input style="border: 1.5px solid black;" type="text" name="namn" placeholder="För och efternamn" required /><br />
+                    <br />
+                    <label>Telefonummer:</label><br />
+                    <input style="border: 1.5px solid black;" type="number" name="telefonummer" placeholder="Endast siffror" required /><br />
+                    <br />
+                    <label>Postnummer:</label><br />
+                    <input style="border: 1.5px solid black;" type="number" name="postnummer" placeholder="Endast siffror" required /><br />
+                    <br />
+                    <label>Epost:</label><br />
+                    <input style="border: 1.5px solid black;" type="email" name="mail" placeholder="tex.@gmail.com" /><br />
+                    <br />
+                    <label>Fråga:</label><br />
+                    <textarea style="border: 2px solid black;" name="w3review" rows="4" cols="50" placeholder="Ställ din fråga här..."></textarea><br />
+                    <br />
+                    <legend>Skicka/återställ</legend>
+                    <button class="knapp1">Submit</button>
+                    <button class="knapp2">Reset</button>
+                </fieldset>
+            </form>
+            <div class="kontakt">
+                <p>Telefonummer: 08 - 508 435 00</p>
+                <p>Email: Info.Thn@Edu.Stockholm.se</p>
+                <p>Adress: Drottningholmsvägen 82, 112 43 Stockholm</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.0642954301788!2d18.01179701607243!3d59.33188038165971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f762af926ea99%3A0x335c437f50fdb60b!2sThorildsplans%20gymnasium!5e0!3m2!1ssv!2sse!4v1622115302318!5m2!1ssv!2sse" width="300" height="240" style="border:0; float: right;" allowfullscreen="" loading="lazy"></iframe>
+                <p>Öppettider:
+                 <ul style="padding-left:20px;">
+                    <li>Måndag-Fredag: 08-20</li>
+                    <li>Lördag: 10-18</li>
+                    <li>Söndag: Stängt</li>
+                 </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="box advertising" id="adbox">
+            <img src="./images/banner.png" alt="banner" class="banner">
+        </div>
+        <div class="box footer">
+          <aside class="aside1">
+            <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-linkedin"></i>
+              <p>Drottningholmsvägen 82</p>
+              <p>112 43 Stockholm</p>
+              <p>Info.Thn@Edu.Stockholm.se</p>
+              <p>08 - 508 435 00</p>
+          </aside>
+          <aside class="aside2">
+            <p id="ft"><img src="blomma.png" alt="blomma" height="40px" width="40px"> Blommor & Buketter</p>
+          </aside>
+        </div>
+    </div>
+      <script src="webshop.js"></script>
+</body>
+</html>
+                
